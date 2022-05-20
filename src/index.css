@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+@layer base{
+  body {
+    @apply font-[Noto-Serif];
+  }
+  li{
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+.content-div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover{
+  /* transform: scale(1.4); */
+  background-image: linear-gradient( to right, #ffdc844d, hsl(16deg 79% 50% / 0%) )!important;
+  background-color: #1a1a1a;
+  /* filter: blur(2px); */
+}
